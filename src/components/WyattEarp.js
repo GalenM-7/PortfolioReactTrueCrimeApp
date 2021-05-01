@@ -5,8 +5,10 @@ class WyattEarp extends Component {
     render () {
         return (
           <div>
-            <b>{this.props.figures[1].headline}</b>
-            <p>
+            <b>
+              <p className="headlineWyatt">{this.props.figures[1].headline}</p>
+            </b>
+            <p className="textWyatt">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -22,7 +24,7 @@ class WyattEarp extends Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sun
             </p>
-            <p>
+            <p className="textBelowWyatt">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

@@ -7,7 +7,9 @@ class JohnWesleyHardin extends Component {
     render () {
         return (
           <div className="col">
-            <b>{this.props.figures[4].headline}</b>
+            <b>
+              <p className="headlineO">{this.props.figures[4].headline}</p>
+            </b>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

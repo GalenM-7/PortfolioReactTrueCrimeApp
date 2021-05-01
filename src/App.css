@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -15,9 +17,130 @@
   background-color: darkred;
 }
 
-.logo {
+.logoApp {
   color:white;
 }
+
+.logoBanner {
+  text-align: center;
+}
+
+.banner {
+  height:175px;
+  width:100%;
+  background: linear-gradient(darkorange, orange);
+  margin-bottom:30px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:20px;
+  margin-right: 30px;
+}
+
+.belowTheKid {
+   text-align: justify;
+  text-justify: inter-word;
+  margin-left:20px;
+  margin-right: 32px;
+  margin-bottom:35px;
+}
+
+
+
+.headline {
+  text-align: center;
+  margin-left:10px;
+  font-size:48px;
+  margin-top:-9px
+}
+
+.headlineS {
+  text-align: left;
+  margin-left:20px;
+  font-size:35px;
+}
+
+.headlineO {
+  text-align: left;
+  margin-left:20px;
+  font-size:30px;
+}
+
+.textBill {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:10px;
+  margin-right: 1px;
+}
+
+.textBelowBill {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:10px;
+  margin-right: 1px;
+  margin-bottom:40px;
+}
+
+.headlineBill {
+  text-align: left;
+  margin-left:10px;
+  font-size:35px;
+
+}
+
+.textJessie {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:10px;
+  margin-right: 3px;
+}
+
+.textBelowJessie {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:10px;
+  margin-right: 3px;
+  margin-bottom:40px;
+}
+
+.headlineJessie {
+  text-align: left;
+  margin-left:10px;
+  margin-right: 8px;
+  font-size:35px;
+}
+
+.textWyatt {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:20px;
+  margin-right: 5px;
+}
+
+.textBelowWyatt {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:20px;
+  margin-right: 5px;
+  margin-bottom:35px;
+
+}
+
+.headlineWyatt {
+  text-align: left;
+  margin-left:20px;
+  margin-right: 8px;
+  font-size:35px;
+  
+}
+
+
+
+
+
+
 
 .App-logo {
   height: 40vmin;

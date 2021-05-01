@@ -3,12 +3,14 @@ import { Navbar, NavbarBrand, Media, Container, Row, Col, Jumbotron} from "react
 import "./App.css";
 import { TIMEPERIODS } from './shared/timeperiods';
 import { WILDWESTFIGURES} from './shared/wildwestfigures';
-import WildWestBanner from "./components/WildWestBanner";
 import BillyTheKid from "./components/BillyTheKid";
 import WyattEarp from "./components/WyattEarp";
 import JohnWesleyHardin from "./components/JohnWesleyHardin";
 import WildBill from "./components/WildBill";
 import JessieJames from "./components/JessieJames";
+import "bootstrap/dist/css/bootstrap.min.css";
+import WildWestBanner from "./components/WildWestBanner";
+
 
 
 class App extends Component {
@@ -24,40 +26,45 @@ class App extends Component {
 render () {
   return (
     <div className="Black">
-        <Navbar className="Bar">
-          <NavbarBrand className="logo" href="/">American Crime</NavbarBrand>
-        </Navbar>
-        <Container className="body">
-          <Row>
-            <img src="assets/images/WildWestLogo.png" max width="100%"></img>
-          </Row>
-          <Row>
-            <Col>
-              <BillyTheKid figures={this.state.wildwestfigures} />
-            </Col>
-          </Row>
-          <Row>
-            <Col xl="8">
-              <Row>
-                <Col>
-                  <WyattEarp figures={this.state.wildwestfigures} />
-                </Col>
-              </Row>
-              <Row>
-                <Col xl="6">
-                  <JessieJames figures={this.state.wildwestfigures} />
-                </Col>
-                <Col xl="6">
-                  <WildBill figures={this.state.wildwestfigures} />
-                </Col>
-              </Row>
-            </Col>
+      <Navbar className="Bar">
+        <NavbarBrand className="logoApp" href="/">
+          American Crime
+        </NavbarBrand>
+      </Navbar>
 
-            <Col xl="4">
-              <JohnWesleyHardin figures={this.state.wildwestfigures} />
-            </Col>
-          </Row>
-        </Container>
+      <Container className="body">
+        <Row>
+          <div className="banner">
+            <WildWestBanner timeperiods={this.state.timeperiods} />
+          </div>
+        </Row>
+        <Row>
+          <Col>
+            <BillyTheKid figures={this.state.wildwestfigures} />
+          </Col>
+        </Row>
+        <Row>
+          <Col xl="8">
+            <Row>
+              <Col>
+                <WyattEarp figures={this.state.wildwestfigures} />
+              </Col>
+            </Row>
+            <Row>
+              <Col xl="6">
+                <JessieJames figures={this.state.wildwestfigures} />
+              </Col>
+              <Col xl="6">
+                <WildBill figures={this.state.wildwestfigures} />
+              </Col>
+            </Row>
+          </Col>
+
+          <Col xl="4">
+            <JohnWesleyHardin figures={this.state.wildwestfigures} />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

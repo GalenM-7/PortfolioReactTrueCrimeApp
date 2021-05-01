@@ -7,8 +7,10 @@ class WildBill extends Component {
     render () {
        return (
          <div className="col">
-           <b>{this.props.figures[3].headline}</b>
-           <p>
+           <b>
+             <p className="headlineBill">{this.props.figures[3].headline}</p>
+           </b>
+           <p className="textBill">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -23,7 +25,7 @@ class WildBill extends Component {
              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
              Excepteur sint occaecat cupidatat non proident, sun
            </p>
-           <p>
+           <p className="textBelowBill">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

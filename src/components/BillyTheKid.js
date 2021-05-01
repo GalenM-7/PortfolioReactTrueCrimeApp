@@ -6,7 +6,9 @@ class BillyTheKid extends Component {
     render () {
         return (
           <div>
-            <b>{this.props.figures[0].headline}</b>
+            <b>
+              <p className="headline">{this.props.figures[0].headline}</p>
+            </b>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -23,7 +25,7 @@ class BillyTheKid extends Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sun
             </p>
-            <p>
+            <p className="belowTheKid">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
