@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
-//import 'typeface-source-serif-pro';
+import 'typeface-source-serif-pro';
+import "typeface-source-sans-pro";
 import './App.css';
 
 

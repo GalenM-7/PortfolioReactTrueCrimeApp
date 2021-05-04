@@ -1,4 +1,6 @@
 import React , { Component } from 'react';
+import { Button } from "reactstrap";
+
 
 class WyattEarp extends Component {
 
@@ -6,9 +8,11 @@ class WyattEarp extends Component {
         return (
           <div>
             <b>
-              <p className="headlineWyatt">{this.props.figures[1].headline}</p>
+              <p className="headlineSecondary">
+                {this.props.figures[1].headline}
+              </p>
             </b>
-            <p className="textWyatt">
+            <p className="textSecondary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -24,7 +28,7 @@ class WyattEarp extends Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sun
             </p>
-            <p className="textBelowWyatt">
+            <p className="textBelowSecondary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -38,8 +42,13 @@ class WyattEarp extends Component {
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sun
+              sun.
             </p>
+            <div>
+              <button className="button">
+                <b>Click Here To Read More</b>
+              </button>
+            </div>
           </div>
         );
     }
