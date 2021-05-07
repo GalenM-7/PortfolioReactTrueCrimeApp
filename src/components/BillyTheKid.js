@@ -23,7 +23,7 @@ class BillyTheKid extends Component {
       return (
         <div>
           <h1>
-            <b>The Regulators</b>
+            <b>{this.props.figures[0].middle}</b>
           </h1>
           <p className="textMoreInfo">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -6,6 +6,7 @@ export const WILDWESTFIGURES = [
     headline: "Billy the Kid, A Legend Of The Wild West",
     personality: "",
     early: "",
+    middle: "middleyears",
     image1: "",
   },
   {
@@ -15,6 +16,7 @@ export const WILDWESTFIGURES = [
     headline: "Wyatt Earp, The West's Most Famous Lawman",
     personality: "",
     early: "",
+    middle: "middleyears",
     image1: "",
   },
   {

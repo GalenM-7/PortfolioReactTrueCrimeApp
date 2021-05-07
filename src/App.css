@@ -37,7 +37,8 @@
 .headlineMain {
   text-align: center;
   margin-left:10px;
-  font-size:48px;
+  margin-bottom:25px;
+  font-size:50px;
   margin-top:10px;
   font-family: "Source Sans Pro", sans-serif;
   line-height:59px;
@@ -64,7 +65,20 @@
 
 .headlineTertiary1 {
   text-align: left;
-  margin-left:10px;
+  margin-left:20px;
+  margin-top:2px;
+  margin-right: 8px;
+  margin-bottom:8px;
+  font-size:35px;
+  line-height:45px;
+  font-family: "Source Sans Pro", sans-serif;
+
+}
+
+.headlineTertiary2 {
+  text-align: left;
+  margin-left:17px;
+  margin-top:2px;
   margin-right: 8px;
   margin-bottom:8px;
   font-size:35px;
@@ -76,13 +90,37 @@
 h1 {
  text-align: center;
   margin-left:10px;
-  font-size:48px;
+  font-size:40px;
   margin-top:10px;
   font-family: "Source Sans Pro", sans-serif;
   line-height:59px;
   margin-bottom:60px;
 
 }
+
+
+h2 {
+ text-align: left;
+  margin-left:18px;
+  font-size:25px;
+  margin-top:10px;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height:59px;
+  margin-bottom:60px;
+
+}
+
+h3 {
+ text-align: left;
+  margin-left:18px;
+  font-size:20px;
+  margin-top:10px;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height:59px;
+  margin-bottom:60px;
+
+}
+
 
 
 
@@ -119,7 +157,7 @@ h1 {
   text-align: justify;
   text-justify: inter-word;
   margin-left:22px;
-  margin-right: 5px;
+  margin-right: 18px;
   margin-top:-4px;
   font-family: "Source Serif Pro", serif;
 
@@ -129,23 +167,23 @@ h1 {
   text-align: justify;
   text-justify: inter-word;
   margin-left:22px;
-  margin-right: 5px;
+  margin-right: 18px;
   margin-bottom:30px;
   font-family: "Source Serif Pro", serif;
 
 }
 
 .textOpinion {
-    text-align: justify;
+  text-align: justify;
   text-justify: inter-word;
-  margin-right: 12px;
+  margin-right: 13px;
   margin-bottom:20px;
   font-family: "Source Serif Pro", serif;
 }
 .textOpinionBottom {
     text-align: justify;
   text-justify: inter-word;
-  margin-right: 12px;
+  margin-right: 13px;
   margin-bottom:30px;
   font-family: "Source Serif Pro", serif;
 }
@@ -155,8 +193,8 @@ h1 {
 .textTertiary1 {
   text-align: justify;
   text-justify: inter-word;
-  margin-left:10px;
-  margin-right: -15px;
+  margin-left:20px;
+  margin-right: 17px;
   font-family: "Source Serif Pro", serif;
 
 }
@@ -164,8 +202,8 @@ h1 {
 .textBelowTertiary1 {
   text-align: justify;
   text-justify: inter-word;
-  margin-left:10px;
-  margin-right: -15px;
+  margin-left:20px;
+  margin-right: 17px;
   margin-bottom:40px;
   font-family: "Source Serif Pro", serif;
     margin-bottom:30px;
@@ -175,17 +213,19 @@ h1 {
 .textTertiary2 {
   text-align: justify;
   text-justify: inter-word;
-  margin-left:10px;
-  margin-right: -5px;
+  margin-left:18px;
+  margin-right: 18px;
   font-family: "Source Serif Pro", serif;
 
 }
 
+
+
 .textBelowTertiary2 {
   text-align: justify;
   text-justify: inter-word;
-  margin-left:10px;
-  margin-right: -5px;
+  margin-left:18px;
+  margin-right: 18px;
   margin-bottom:40px;
   font-family: "Source Serif Pro", serif;
     margin-bottom:30px;
@@ -195,7 +235,7 @@ h1 {
 .button {
   display: flex;
   margin-top:-5px;
-  margin-bottom:55px;
+  margin-bottom:60px;
   margin-left:auto;
   margin-right:auto;
   justify-content: center;
@@ -214,8 +254,18 @@ h1 {
 
 }
 
+.nav-link {
+  color:white;
+  text-decoration:none;
+  list-style-type: none;
+}
 
-
+.nav-link:hover {
+  color:black;
+}
+.navbar-dark {
+    background-image: linear-gradient(to right,red,darkred);
+}
 
 .App-logo {
   height: 40vmin;

@@ -10,6 +10,12 @@ import WildBill from "./components/WildBill";
 import JessieJames from "./components/JessieJames";
 import "bootstrap/dist/css/bootstrap.min.css";
 import WildWestBanner from "./components/WildWestBanner";
+import JessieWildBill from "./components/JessieWildBill";
+import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import WildWestPage from "./components/WildWestPage";
+import Header from "./components/Header";
+import MainComponent from "./components/MainComponent";
 
 
 
@@ -25,47 +31,9 @@ class App extends Component {
 
 render () {
   return (
-    <div className="Black">
-      <Navbar className="Bar">
-        <NavbarBrand className="logoApp" href="/">
-          American Crime
-        </NavbarBrand>
-      </Navbar>
-
-      <Container className="body">
-        <Row>
-          <div className="banner">
-            <WildWestBanner timeperiods={this.state.timeperiods} />
-          </div>
-        </Row>
-        <Row>
-          <Col>
-            <BillyTheKid figures={this.state.wildwestfigures} />
-          </Col>
-        </Row>
-        <Row>
-          <Col xl="8">
-            <Row>
-              <Col>
-                <WyattEarp figures={this.state.wildwestfigures} />
-              </Col>
-            </Row>
-            <Row>
-              <Col xl="6">
-                <JessieJames figures={this.state.wildwestfigures} />
-              </Col>
-              <Col xl="6">
-                <WildBill figures={this.state.wildwestfigures} />
-              </Col>
-            </Row>
-          </Col>
-
-          <Col xl="4">
-            <JohnWesleyHardin figures={this.state.wildwestfigures} />
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <BrowserRouter>
+      <MainComponent />
+    </BrowserRouter>
   );
 }
 
