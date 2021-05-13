@@ -21,7 +21,7 @@ class WyattEarp extends Component {
     if (!isOpen) {
       return (
         <button
-          className="button"
+          className="buttonFigureWest"
           onClick={() => this.onButtonSelect(this.state.isOpen)}
         >
           <b>Click Here To Read More</b>
@@ -30,7 +30,7 @@ class WyattEarp extends Component {
     } else {
       return (
         <button
-          className="button"
+          className="buttonFigureWestSM"
           onClick={() => this.onButtonSelect(this.state.isOpen)}
         >
           <b>Click Here To Collapse Story</b>

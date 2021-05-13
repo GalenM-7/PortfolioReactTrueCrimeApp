@@ -70,7 +70,7 @@ class JohnWesleyHardin extends Component {
     if (!isOpen) {
       return (
         <button
-          className="button"
+          className="buttonFigureWest"
           onClick={() => this.clickWesley(this.state.isOpen)}
         >
           <b>Click Here To Read More</b>
@@ -79,7 +79,7 @@ class JohnWesleyHardin extends Component {
     } else {
       return (
         <button
-          className="button"
+          className="buttonFigureWestSM"
           onClick={() => this.clickWesley(this.state.isOpen)}
         >
           <b>Click Here To Collapse Story</b>

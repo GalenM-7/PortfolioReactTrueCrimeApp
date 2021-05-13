@@ -20,15 +20,7 @@ import MainComponent from "./components/MainComponent";
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      wildwestfigures: WILDWESTFIGURES,
-      timeperiods: TIMEPERIODS
-    };
-  }
-
-
+ 
 render () {
   return (
     <BrowserRouter>

@@ -78,7 +78,7 @@ class JessieWildBill extends Component {
     if (!isOpen) {
       return (
         <button
-          className="button"
+          className="buttonFigureWest"
           onClick={() => this.clickBill(this.state.isOpenBill)}
         >
           <b>Click Here To Read More</b>
@@ -87,7 +87,7 @@ class JessieWildBill extends Component {
     } else {
       return (
         <button
-          className="button"
+          className="buttonFigureWestSM"
           onClick={() => this.clickBill(this.state.isOpenBill)}
         >
           <b>Click Here To Collapse Story</b>
@@ -148,7 +148,7 @@ class JessieWildBill extends Component {
     if (!isOpen) {
       return (
         <button
-          className="button"
+          className="buttonFigureWest"
           onClick={() => this.clickJessie(this.state.isOpenJessie)}
         >
           <b>Click Here To Read More</b>
@@ -157,7 +157,7 @@ class JessieWildBill extends Component {
     } else {
       return (
         <button
-          className="button"
+          className="buttonFigureWestSM"
           onClick={() => this.clickJessie(this.state.isOpenJessie)}
         >
           <b>Click Here To Collapse Story</b>

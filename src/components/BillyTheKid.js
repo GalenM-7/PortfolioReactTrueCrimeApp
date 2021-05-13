@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from "reactstrap";
 
 
 class BillyTheKid extends Component {
@@ -47,6 +46,28 @@ class BillyTheKid extends Component {
     }
   }
 
+  ButtonBilly(isOpen) {
+    if (!isOpen) {
+      return (
+        <button
+          className="buttonFigureWest"
+          onClick={() => this.OnButtonSelect(this.state.isOpen)}
+        >
+          <b>Click Here To Read More</b>
+        </button>
+      );
+    } else {
+      return (
+        <button
+          className="buttonFigureWestSM"
+          onClick={() => this.OnButtonSelect(this.state.isOpen)}
+        >
+          <b>Click Here To Collapse Story</b>
+        </button>
+      );
+    }
+  }
+
   render() {
     return (
       <div>
@@ -85,12 +106,7 @@ class BillyTheKid extends Component {
         </p>
         <div>
           {this.renderMoreInformation(this.state.isOpen)}
-          <button
-            className="button"
-            onClick={() => this.OnButtonSelect(this.state.isOpen)}
-          >
-            <b>Click Here To Read More</b>
-          </button>
+          {this.ButtonBilly(this.state.isOpen)}
         </div>
       </div>
     );
